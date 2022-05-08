@@ -20,21 +20,21 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div>
       <form>
         <h2>Sign Up</h2>
         <label id='email'>
-          Phone Number or Email
+          Phone Number or Email*
         </label>
         <input type='text' name='email' value={valueUser} onChange={handleChangeUser} required/>
         <label id='pass'>
-          Password
+          Password*
         </label>
-        <input name='pass' type='pass' value={passVal} onChange={handleChangePass} required/>
+        <input name='pass' type='password' value={passVal} onChange={handleChangePass} required/>
         <label id='passComf'>
-          Confirm Password
+          Confirm Password*
         </label>
-        <input name='passComf' type='pass' value={conPassVal} onChange={handleChangeCon} required/>
+        <input className='con-pass' name='passComf' type='password' value={conPassVal} onChange={handleChangeCon} required readOnly/>
         <div>
           Password Condition:
           <p>Password must contain English characters.</p>
@@ -42,7 +42,7 @@ function App() {
           <p>Password must use letter and numbers.</p>
           <p>Password and confirm password should be the same.</p>
         </div>
-        <button type='submit'>Submit</button>
+        <button type='submit'>Sign Up</button>
       </form>
     </div>
   );
