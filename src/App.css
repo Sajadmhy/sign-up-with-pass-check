@@ -38,6 +38,25 @@ button {
     font-size: 18px;
 }
 
-.con-pass {
+.disable {
     background-color: lightgray;
+    cursor:not-allowed;
     }
+
+.wrong {
+    color: red;
+}
+
+.wrong::before {
+    content: 'X';
+    padding: 0 10px 0  0;
+}
+
+.right {
+    color: green;
+}
+
+.right::before {
+    content: 'O';
+    padding: 0 10px 0 0;
+}
