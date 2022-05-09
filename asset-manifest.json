@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sign-up-with-pass-check/static/css/main.2211c781.css",
+    "main.js": "/sign-up-with-pass-check/static/js/main.ffb80742.js",
+    "index.html": "/sign-up-with-pass-check/index.html",
+    "main.2211c781.css.map": "/sign-up-with-pass-check/static/css/main.2211c781.css.map",
+    "main.ffb80742.js.map": "/sign-up-with-pass-check/static/js/main.ffb80742.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2211c781.css",
+    "static/js/main.ffb80742.js"
+  ]
+}
