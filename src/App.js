@@ -92,28 +92,28 @@ useEffect(() => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <h2>Sign Up</h2>
+        <h2>ثبت نام</h2>
         <label id='email'>
-          Phone Number or Email*
+          شماره تماس یا ایمیل (الزامی)
         </label>
         <input type='text' name='email' value={valueUser} onChange={handleChangeUser} required/>
         <label id='pass'>
-          Password*
+          رمز عبور (الزامی)
         </label>
         <input name='pass' type='password' value={passVal} onChange={handleChangePass} required/>
         <label id='passComf'>
-          Confirm Password*
+          ورود مجدد رمز عبور (الزامی)
         </label>
         <input className={isDis ? "disable" : ""} id='con-pass' name='passComf'
          type='password' value={conPassVal} onChange={handleChangeCon} required disabled={isDis}/>
         <div>
-          <b>Password Condition:</b>
-          <p id='condition1' className={cond5 ? "right" : "wrong"}>Password must contain only English characters.</p>
-          <p id='condition2' className={passVal.length > 5 ? "right" : "wrong"}>Password should be at least 6 characters.</p>
-          <p id='condition3' className={cond3 ? "right" : "wrong"}>Password must use letters and numbers.</p>
-          <p id='condition4' className={cond4 ? "right" : "wrong"}>Password and confirm password should be the same.</p>
+          <b>شرایط رمز ورود</b>
+          <p id='condition1' className={cond5 ? "right" : "wrong"}>رمز عبور باید با حروف انگلیسی باشد.</p>
+          <p id='condition2' className={passVal.length > 5 ? "right" : "wrong"}>حداقل ۶ کاراکتر داشته باشد.</p>
+          <p id='condition3' className={cond3 ? "right" : "wrong"}>شامل حروف و عدد باشد.</p>
+          <p id='condition4' className={cond4 ? "right" : "wrong"}>رمز عبور و تکرار آن یکسان باشد.</p>
         </div>
-        <button type='submit'>Sign Up</button>
+        <button type='submit'>ثبت نام کنید</button>
       </form>
     </div>
   );
